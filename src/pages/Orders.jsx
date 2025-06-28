@@ -149,8 +149,8 @@ const Orders = () => {
   }, [token]);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
-      <div className="mb-8">
+    <div className=" mx-auto px-4 sm:px-6 py-8 bg-warmWhite">
+      <div className="mb-8 text-3xl">
         <Title text1={'MY'} text2={'ORDERS'} />
       </div>
 
@@ -174,8 +174,8 @@ const Orders = () => {
       ) : orderData.length === 0 ? (
         <EmptyOrders />
       ) : (
-        <div className="bg-white rounded-lg shadow-sm border border-gray-100">
-          <div className="p-4 border-b bg-gray-50">
+        <div className="bg-cream p-4 rounded-lg shadow-sm border border-gray-100">
+          <div className="p-4 border-b bg-gray-50 rounded-lg">
             <h2 className="text-lg font-medium text-gray-800">Order History</h2>
             <p className="text-sm text-gray-500 mt-1">Track and manage your recent orders</p>
           </div>

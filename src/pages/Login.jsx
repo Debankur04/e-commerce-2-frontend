@@ -107,10 +107,10 @@ const Login = () => {
   }, [token, navigate]);
   
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-12 bg-gray-50">
+    <div className="flex flex-col items-center justify-center min-h-screen px-4 py-12 bg-warmWhite">
       <div className="w-full max-w-md bg-white rounded-lg shadow-md p-6 md:p-8">
         <div className="text-center mb-6">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-800">
+          <h1 className="text-2xl md:text-3xl font-bold text-deepBurgundy">
             {authMode === 'login' ? 'Welcome Back' : 'Create Account'}
           </h1>
           <p className="text-gray-600 mt-2 text-sm md:text-base">
@@ -189,14 +189,14 @@ const Login = () => {
           
           <div className="flex items-center justify-between text-sm pt-2">
             {authMode === 'login' && (
-              <button type="button" className="text-blue-600 hover:text-blue-800 font-medium text-sm">
+              <button type="button" className="text-deepBurgundy font-medium text-sm">
                 Forgot password?
               </button>
             )}
             <button 
               type="button" 
               onClick={toggleAuthMode} 
-              className="text-blue-600 hover:text-blue-800 font-medium text-sm ml-auto"
+              className="text-deepBurgundy font-medium text-sm ml-auto"
             >
               {authMode === 'login' ? 'Create an account' : 'Already have an account?'}
             </button>
@@ -205,7 +205,7 @@ const Login = () => {
           <button
             onClick={handleSubmit}
             disabled={loading}
-            className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-colors disabled:opacity-50 font-medium mt-4"
+            className="w-full bg-deepBurgundy text-white py-2 px-4 rounded-md  focus:outline-none focus:ring-2 focus:ring-charcoal focus:ring-offset-2 transition-colors disabled:opacity-50 font-medium mt-4"
           >
             {loading ? "Processing..." : authMode === 'login' ? 'Sign In' : 'Sign Up'}
           </button>

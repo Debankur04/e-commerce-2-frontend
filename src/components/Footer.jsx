@@ -5,13 +5,13 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
   
   return (
-    <footer className="bg-gray-50 pt-16 pb-6">
+    <footer className="bg-warmWhite pt-16 pb-6">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Logo and About */}
           <div className="lg:col-span-2">
-            <img src={assets.logo} className="h-10 mb-6" alt="Forever You Logo" />
+            <h1 className='text-4xl font-semibold text-deepBurgundy'>Vyapar</h1>
             <p className="text-gray-600 mb-6 max-w-lg">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -83,7 +83,7 @@ const Footer = () => {
               placeholder="Your email address"
               className="w-full px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-r-md transition-colors">
+            <button className="bg-deepBurgundy  text-white px-4 py-2 rounded-r-md transition-colors">
               Subscribe
             </button>
           </div>

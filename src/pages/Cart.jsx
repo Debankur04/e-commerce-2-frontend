@@ -27,13 +27,13 @@ const Cart = () => {
   }, [cartItems, products])
 
   return (
-    <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div className=" mx-auto px-4 sm:px-6 lg:px-8 py-12 bg-warmWhite">
       {/* Cart Header */}
       <div className="mb-8">
         <div className="text-3xl">
           <Title text1={'YOUR'} text2={'CART'} />
         </div>
-        <p className="text-gray-500 mt-2">
+        <p className="text-charcoal mt-2">
           {cartData.length} {cartData.length === 1 ? 'item' : 'items'} in your shopping cart
         </p>
       </div>
@@ -47,7 +47,7 @@ const Cart = () => {
           <p className="text-lg font-medium">Your cart is empty</p>
           <button 
             onClick={() => navigate('/')} 
-            className="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2 rounded-md transition duration-300"
+            className="mt-4 bg-deepBurgundy text-white px-6 py-2 rounded-md transition duration-300"
           >
             Continue Shopping
           </button>
@@ -120,12 +120,12 @@ const Cart = () => {
       {/* Cart Total and Checkout */}
       {cartData.length > 0 && (
         <div className="mt-8 flex flex-col sm:flex-row sm:justify-end">
-          <div className="w-full sm:w-[450px] bg-white rounded-lg shadow-sm p-6">
+          <div className="w-screen bg-white  p-6">
             <CartTotal />
             <div className="mt-6">
               <button 
                 onClick={() => navigate('/place-order')} 
-                className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-md font-medium transition duration-300"
+                className="w-full bg-deepBurgundy text-white py-3 rounded-md font-medium transition duration-300"
               >
                 PROCEED TO CHECKOUT
               </button>

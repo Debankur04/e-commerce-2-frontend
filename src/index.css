@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+:root {
+  --cream: #f5f1e8;
+  --warm-white: #faf8f3;
+  --gold: #d4af37;
+  --rose-gold: #e8b4a0;
+  --deep-burgundy: #722f37;
+  --charcoal: #2c2c2c;
+  --soft-gray: #8b8b8b;
+  --accent-pink: #d4769b;
+  --mint: #a8d5ba;
+  --shadow: rgba(0, 0, 0, 0.15);
+  --light-shadow: rgba(0, 0, 0, 0.08);
+  
+}
+
+
+
 a.active hr{
     display: block;
 }

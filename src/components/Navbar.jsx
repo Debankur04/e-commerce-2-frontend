@@ -15,11 +15,11 @@ const Navbar = () => {
     }
 
     return (
-        <div className='sticky top-0 z-50 bg-white shadow-md border-none'>
-            <div className='container mx-auto px-4 py-4 flex items-center justify-between'>
+        <div className='sticky top-0 z-50 bg-[#faf8f3] shadow-md border-none w-screen'>
+            <div className=' px-4 py-4 flex items-center justify-between'>
                 {/* Logo */}
                 <Link to='/' className='flex-shrink-0'>
-                    <img src={assets.logo} className='w-36 transition-transform hover:scale-105' alt="Logo" />
+                    <h1 className='text-4xl font-extrabold text-[#722f37]'>Vyapar</h1>
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -63,9 +63,9 @@ const Navbar = () => {
                         {token && 
                         <div className='group-hover:block hidden absolute right-0 pt-2'>
                             <div className='flex flex-col gap-1 w-40 py-3 px-4 bg-white shadow-lg rounded-lg text-gray-600'>
-                                <p className='cursor-pointer hover:bg-gray-50 py-2 px-3 rounded transition-colors'>My Profile</p>
-                                <p onClick={() => navigate('/orders')} className='cursor-pointer hover:bg-gray-50 py-2 px-3 rounded transition-colors'>Orders</p>
-                                <p onClick={logout} className='cursor-pointer hover:bg-gray-50 py-2 px-3 rounded transition-colors'>Logout</p>
+                                <p className='cursor-pointer hover:bg-gray-50 py-2 px-3 rounded transition-colors text-charcoal'>My Profile</p>
+                                <p onClick={() => navigate('/orders')} className='cursor-pointer hover:bg-gray-50 py-2 px-3 text-charcoal rounded transition-colors'>Orders</p>
+                                <p onClick={logout} className='cursor-pointer hover:bg-gray-50 py-2 px-3 rounded transition-colors text-charcoal'>Logout</p>
                             </div>
                         </div>}
                     </div>
@@ -97,7 +97,7 @@ const Navbar = () => {
                             
                             {/* Close Button */}
                             <div className='flex justify-between items-center p-4 border-b'>
-                                <h2 className='font-bold'>Menu</h2>
+                                <h2 className='font-bold text-charcoal'>Menu</h2>
                                 <button onClick={() => setVisible(false)} className='p-2'>
                                     <img className='h-4 rotate-180' src={assets.dropdown_icon} alt="Close" />
                                 </button>
@@ -108,28 +108,28 @@ const Navbar = () => {
                                 <NavLink 
                                     onClick={() => setVisible(false)} 
                                     className={({isActive}) => 
-                                        `py-3 px-6 border-b ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
+                                        `py-3 px-6 border-b text-charcoal ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
                                     to='/'>
                                     HOME
                                 </NavLink>
                                 <NavLink 
                                     onClick={() => setVisible(false)} 
                                     className={({isActive}) => 
-                                        `py-3 px-6 border-b ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
+                                        `py-3 px-6 border-b text-charcoal ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
                                     to='/collection'>
                                     COLLECTION
                                 </NavLink>
                                 <NavLink 
                                     onClick={() => setVisible(false)} 
                                     className={({isActive}) => 
-                                        `py-3 px-6 border-b ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
+                                        `py-3 px-6 border-b text-charcoal ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
                                     to='/about'>
                                     ABOUT
                                 </NavLink>
                                 <NavLink 
                                     onClick={() => setVisible(false)} 
                                     className={({isActive}) => 
-                                        `py-3 px-6 border-b ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
+                                        `py-3 px-6 border-b text-charcoal ${isActive ? 'bg-gray-50 font-medium' : ''}`} 
                                     to='/contact'>
                                     CONTACT
                                 </NavLink>
