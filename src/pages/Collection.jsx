@@ -73,11 +73,11 @@ const Collection = () => {
   }, [sortType])
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div className="mx-auto px-4 sm:px-6 lg:px-8 py-10 bg-warmWhite">
       <div className="flex flex-col sm:flex-row gap-8 border-t pt-10">
         
         {/* Filter Sidebar */}
-        <div className="w-full sm:w-64">
+        <div className="w-full sm:w-64 bg-warmWhite">
           <div className="flex items-center justify-between">
             <h2 className="text-xl font-medium flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" viewBox="0 0 20 20" fill="currentColor">
